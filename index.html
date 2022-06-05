@@ -116,6 +116,11 @@
     font-size: 1.2rem;
 		}
 
+		.dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+
 	</style>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -128,7 +133,8 @@
 				 
 			<img src="./images/Draw my Code.png" alt="" style="height: 70px; margin-right: 10px; border-radius: 7px;">
 			<b class='heading__text title' >Draw my Code</b>  &nbsp;&nbsp; <span style="color: darkgray; margin-top: 9px;">DSA made easy</span>     		
-     	</div>
+			<button onclick="myFunction()">Switch mode</button>
+		</div>
      	<div class="section row"></div>
      	<div class="body__bin"></div>
      </div>
@@ -545,6 +551,10 @@
 	     	}
      	}
 
+        function myFunction() {
+        var element = document.main;
+        element.classList.toggle("dark");
+        }
      </script>
 </body>
 </html>
